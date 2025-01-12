@@ -30,7 +30,7 @@ app.get("/tasks/:id", (req, res) => {
   if (!task) {
     return res.status(404).json({ error: "Task not found" });
   }
-
+  // console.log(task)
   res.status(200).json(task);
 });
 
